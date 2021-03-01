@@ -6,5 +6,10 @@ pipeline {
                 bat "./mvnw compile"
             }
         }
+		stage("Unit Test") {
+			steps {
+				bat "./mvnw test"
+			}
+		}
     }
 }
